@@ -28,3 +28,12 @@
 
 - Just decorate component wise html template.
 - In this video I also learn how to divided a HTML template in React component.
+
+### Setup Routing - react-router-dom (6.4)
+
+#### with react-router-dom
+
+### Summary of react-router-dom
+
+- Setup react-router-dom by npm install react-router-dom@6
+- Create dynamic router for video page and replace a by react Link.
