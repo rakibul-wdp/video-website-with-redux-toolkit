@@ -41,3 +41,9 @@
 ### Videos feature (6.5)
 
 #### Create videos slice and videos API
+
+### Summary of create videos slice and videos API (6.5)
+
+- Create videos slice and async thunk function and also create store.
+- In async thunk function for data fetch I use axios. Also, in thunk function use external function.
+- In create slice normally use extra reducer with builder parameter and reducer functionality.
