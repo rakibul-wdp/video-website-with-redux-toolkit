@@ -37,3 +37,7 @@
 
 - Setup react-router-dom by npm install react-router-dom@6
 - Create dynamic router for video page and replace a by react Link.
+
+### Videos feature (6.5)
+
+#### Create videos slice and videos API
