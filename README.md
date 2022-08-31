@@ -19,3 +19,5 @@
 - setup server installing json server and some data like videos and tags.
 - of course you need to npm i and ignore server/node_modules.
 - So, our server or backend is ready lets start.
+### React User Interface (6.3)
+#### Design the UI components in React
