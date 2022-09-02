@@ -70,3 +70,8 @@
 ### Tags Feature 2 (6.8)
 
 #### Fetch Tags from back-end and UI integration
+
+### Summary of tags feature 2 (6.8)
+
+- Load tags data and dispatch action.
+- Show tags in ui by follow simple step.
