@@ -66,3 +66,7 @@
 - Create tags slice and api by seeing video slice and api.
 - Re understand tag slice and how work it.
 - React developer mode render two times
+
+### Tags Feature 2 (6.8)
+
+#### Fetch Tags from back-end and UI integration
