@@ -98,3 +98,9 @@
 ### Filters & Search Feature (6.11)
 
 #### Slice, API & UI Integration
+
+### Summary of filter and search feature (6.11)
+
+- Create new slice like filter slice for filter.
+- this filter slice don't have async function because don't need to fetch api.
+- And also, take search filed value to search in array.
