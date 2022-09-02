@@ -60,3 +60,9 @@
 ### Tags Feature 1 (6.7)
 
 #### Create tags slice and tags API
+
+### Summary of tags feature 1 (6.7)
+
+- Create tags slice and api by seeing video slice and api.
+- Re understand tag slice and how work it.
+- React developer mode render two times
