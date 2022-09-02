@@ -79,3 +79,8 @@
 ### Video Feature (6.9)
 
 #### Slice, API & UI Integration
+
+### Summary of video feature (6.9)
+
+- Create another slice and API like video slice and video API for video description page.
+- Load data for single video in video description component and show it dynamically.
