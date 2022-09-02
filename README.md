@@ -38,7 +38,7 @@
 - Setup react-router-dom by npm install react-router-dom@6
 - Create dynamic router for video page and replace a by react Link.
 
-### Videos feature (6.5)
+### Videos feature 1 (6.5)
 
 #### Create videos slice and videos API
 
@@ -47,3 +47,12 @@
 - Create videos slice and async thunk function and also create store.
 - In async thunk function for data fetch I use axios. Also, in thunk function use external function.
 - In create slice normally use extra reducer with builder parameter and reducer functionality.
+
+### Videos Feature 2 (6.6)
+
+#### UI integration & dispatch actions
+
+### Summary of fetch videos & UI integration (6.6)
+
+- Dispatch action for loading data and handle some error in video grid component.
+- After pass data video grid item component and show data dynamically.
