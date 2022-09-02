@@ -107,4 +107,8 @@
 
 ### Filters and Search Feature (6.12)
 
-### Update video slice
+#### Update video slice
+
+### Summary of filter and search feature (6.12)
+
+- Implement some more functionality for filter and search feature
