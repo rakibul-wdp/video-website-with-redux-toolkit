@@ -75,3 +75,7 @@
 
 - Load tags data and dispatch action.
 - Show tags in ui by follow simple step.
+
+### Video Feature (6.9)
+
+#### Slice, API & UI Integration
