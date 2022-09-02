@@ -84,3 +84,7 @@
 
 - Create another slice and API like video slice and video API for video description page.
 - Load data for single video in video description component and show it dynamically.
+
+### Related videos Feature (6.10)
+
+#### Slice, API & Ui Integration
