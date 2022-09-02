@@ -6,12 +6,13 @@ import { fetchVideos } from '../../features/videos/videosSlice';
 import Loading from '../ui/Loading';
 
 const VideoGrid = () => {
-  const dispatch = useDispatch();
   const { videos, isLoading, isError, error } = useSelector((state) => state.videos);
+  const { tags, search } = useSelector((state) => state.filter);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchVideos());
-  }, [dispatch]);
+    dispatch(fetchVideos({ tags, search }));
+  }, [dispatch, tags, search]);
 
   // decide what to render
   let content;

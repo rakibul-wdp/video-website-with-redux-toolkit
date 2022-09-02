@@ -104,3 +104,7 @@
 - Create new slice like filter slice for filter.
 - this filter slice don't have async function because don't need to fetch api.
 - And also, take search filed value to search in array.
+
+### Filters and Search Feature (6.12)
+
+### Update video slice
