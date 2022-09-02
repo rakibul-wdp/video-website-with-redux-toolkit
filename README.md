@@ -88,3 +88,9 @@
 ### Related videos Feature (6.10)
 
 #### Slice, API & Ui Integration
+
+### Summary of related videos feature (6.10)
+
+- Show related video side of the playing video. It's work with tags and also remember that playing video is not showing on related video section.
+- You can do it by params most of the world you need to do in api section.
+- So, you need to create custom params and other work as like previous work.
