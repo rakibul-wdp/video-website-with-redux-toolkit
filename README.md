@@ -56,3 +56,7 @@
 
 - Dispatch action for loading data and handle some error in video grid component.
 - After pass data video grid item component and show data dynamically.
+
+### Tags Feature 1 (6.7)
+
+#### Create tags slice and tags API
