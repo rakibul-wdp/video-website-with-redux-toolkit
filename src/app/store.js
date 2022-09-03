@@ -5,6 +5,7 @@ import videoReducer from '../features/video/videoSlice';
 import relatedVideosReducer from '../features/relatedVideos/relatedVideosSlice';
 import filterReducer from '../features/filter/filterSlice';
 import paginationReducer from '../features/pagination/paginationSlice';
+import likeUnlikeReducer from '../features/likeUnlike/likeUnlikeSlice';
 
 export const store = configureStore({
   reducer: {
@@ -14,5 +15,6 @@ export const store = configureStore({
     relatedVideos: relatedVideosReducer,
     filter: filterReducer,
     pagination: paginationReducer,
+    likeUnlike: likeUnlikeReducer,
   },
 });
