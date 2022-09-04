@@ -14,7 +14,7 @@ export const store = configureStore({
     video: videoReducer,
     relatedVideos: relatedVideosReducer,
     filter: filterReducer,
-    pagination: paginationReducer,
+    paginate: paginationReducer,
     likeUnlike: likeUnlikeReducer,
   },
 });

@@ -1,8 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { Link, useNavigate } from 'react-router-dom';
+import { authored } from '../../features/filter/filterSlice';
+import { paginationNumber } from '../../features/pagination/paginationSlice';
 
 const VideoGridItem = ({ video = {} }) => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const { id, thumbnail, title, duration, author, avatar, views, date } = video;
+
+  const authorFilter = (author) => {
+    navigate('/');
+    dispatch(paginationNumber(1));
+    dispatch(authored(author));
+  };
+
   return (
     <div className='col-span-12 sm:col-span-6 md:col-span-3 duration-300 hover:scale-[1.03]'>
       <div className='w-full flex flex-col'>
@@ -15,17 +27,20 @@ const VideoGridItem = ({ video = {} }) => {
         </div>
 
         <div className='flex flex-row mt-2 gap-2'>
-          <Link to={`videos/${id}`} className='shrink-0'>
+          <div onClick={() => authorFilter(author)} className='shrink-0'>
             <img src={avatar} className='rounded-full h-6 w-6' alt={author} />
-          </Link>
+          </div>
 
           <div className='flex flex-col'>
             <Link to={`videos/${id}`}>
               <p className='text-slate-900 text-sm font-semibold'>{title}</p>
             </Link>
-            <Link to={'/videos/1'} className='text-gray-400 text-xs mt-2 hover:text-gray-600'>
+            <div
+              onClick={() => authorFilter(author)}
+              className='text-gray-400 text-xs mt-2 hover:text-gray-600 cursor-pointer'
+            >
               {author}
-            </Link>
+            </div>
             <p className='text-gray-400 text-xs mt-1'>
               {views} views . {date}
             </p>

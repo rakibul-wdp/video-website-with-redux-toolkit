@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { paginationNumber } from '../../features/pagination/paginationSlice';
 
 const Pagination = () => {
-  const { pageNumber } = useSelector((state) => state.pagination);
+  const { pageNumber } = useSelector((state) => state.paginate);
   const page = useSelector((state) => Math.ceil(state.videos.videos.length / 5));
   const dispatch = useDispatch();
 

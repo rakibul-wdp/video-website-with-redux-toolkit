@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from '../../utils/axios';
 
 export const getLikeUnlike = async (id, lu, update) => {
   if (lu === 'likes') {

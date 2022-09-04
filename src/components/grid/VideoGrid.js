@@ -6,18 +6,28 @@ import { fetchVideos } from '../../features/videos/videosSlice';
 import Loading from '../ui/Loading';
 
 const VideoGrid = () => {
-  const { videos, isLoading, isError, error } = useSelector((state) => state.videos);
-  const { tags, search } = useSelector((state) => state.filter);
+  const { videos: initVideo, paginate } = useSelector((state) => state);
+  const { tags, search, author } = useSelector((state) => state.filter);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchVideos({ tags, search }));
-  }, [dispatch, tags, search]);
+    dispatch(fetchVideos({ tags, search, author }));
+  }, [dispatch, tags, search, author]);
+
+  const { videos, isLoading, isError, error } = initVideo;
+  const { pageSize, pageNumber } = paginate;
+
+  // pagination
+  const pagination = (array, page_size, page_number) => {
+    const data = array.slice((page_number - 1) * page_size, page_number * page_size);
+    return data;
+  };
 
   // decide what to render
   let content;
 
   if (isLoading) content = <Loading />;
+
   if (!isLoading && isError) content = <div className='col-span-12'>{error}</div>;
 
   if (!isError && !isLoading && videos?.length === 0) {
@@ -25,7 +35,7 @@ const VideoGrid = () => {
   }
 
   if (!isError && !isLoading && videos?.length > 0) {
-    content = videos.map((video) => <VideoGridItem key={video.id} video={video} />);
+    content = pagination(videos, pageSize, pageNumber).map((video) => <VideoGridItem key={video.id} video={video} />);
   }
 
   return (

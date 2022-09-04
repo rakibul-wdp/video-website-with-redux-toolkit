@@ -16,7 +16,7 @@ const filterSlice = createSlice({
     tagRemoved: (state, action) => {
       const indexToRemove = state.tags.indexOf(action.payload);
 
-      if (indexToRemove !== -1) {
+      if (indexToRemove > -1) {
         state.tags.splice(indexToRemove, 1);
       }
     },

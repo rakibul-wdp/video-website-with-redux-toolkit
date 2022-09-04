@@ -8,7 +8,7 @@ import { fetchLikeUnlike } from '../../features/likeUnlike/likeUnlikeSlice';
 const LikeUnlike = ({ id, likes, unLikes }) => {
   const dispatch = useDispatch();
   const [like, setLike] = useState(likes);
-  const [unLike, setUnlike] = useState(unLikes);
+  const [unLike, setUnLike] = useState(unLikes);
 
   const handleLike = (lu) => {
     setLike(like + 1);
@@ -16,7 +16,7 @@ const LikeUnlike = ({ id, likes, unLikes }) => {
   };
 
   const handleUnLike = (lu) => {
-    setUnlike(unLike + 1);
+    setUnLike(unLike + 1);
     dispatch(fetchLikeUnlike({ id, lu, update: unLike + 1 }));
   };
 
