@@ -13,11 +13,11 @@ export const getLikeUnlike = async (id, lu, update) => {
     );
     return { data, lu };
   }
-  if (lu === 'unlikes') {
+  if (lu === 'unLikes') {
     const { data } = await axios.patch(
       `/videos/${id}`,
       {
-        unlikes: update,
+        unLikes: update,
       },
       {
         headers: { 'Content-type': 'application/json; charset=UTF-8' },

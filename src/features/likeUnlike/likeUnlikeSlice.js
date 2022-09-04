@@ -29,7 +29,7 @@ const likeUnlikeSlice = createSlice({
         if (action.payload.lu === 'likes') {
           state.likes = action.payload.data.likes;
         }
-        if (action.payload.lu === 'unlikes') {
+        if (action.payload.lu === 'unLikes') {
           state.unLikes = action.payload.data.unLikes;
         }
       })
